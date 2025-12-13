@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auth</title>
+
+    <style>
+        .form {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 250px;
+            margin: 50px auto;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        /* Default screen → show login first */
+        #login {
+            display: block;
+        }
+
+        a {
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- LOGIN FORM -->
+    <div id="login" class="form">
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" placeholder="Password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <br>
+        <a onclick="showSignup()">Create Account</a>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signup" class="form">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="Name" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" placeholder="Password" required><br><br>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <br>
+        <a onclick="showLogin()">Already have an account?</a>
+    </div>
+
+    <script>
+        function showLogin() {
+            document.getElementById("login").style.display = "block";
+            document.getElementById("signup").style.display = "none";
+        }
+
+        function showSignup() {
+            document.getElementById("signup").style.display = "block";
+            document.getElementById("login").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
