@@ -1,6 +1,6 @@
 # Signup & Login System
 
-[Live Demo](https://gungun210.github.io/signup-login)
+[Live Demo](https://gungun210.github.io/login_and_signup_page/)
 
 ## About
 A simple Signup & Login system built to handle user authentication with username and password.  
